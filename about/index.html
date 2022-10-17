@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+
+   <!-- Bootstrap 5 CSS File -->
+   <link rel="stylesheet" href="../css/bootstrap.min.css" />
+   <script src="../js/bootstrap.bundle.min.js"></script>
+
+   <!-- Main CSS File -->
+   <link rel="stylesheet" href="../css/style.css" />
+
+   <style>
+      article p {
+         line-height: 23px;
+      }
+
+      .about-section {
+         margin-top: 109px;
+      }
+
+      @media screen and (max-width: 991px) {
+         .about-section {
+            margin-top: 119px;
+         }
+      }
+
+      .row p {
+         text-transform: none;
+      }
+
+      blockquote {
+         position: relative;
+         padding: 30px 25px 30px 60px;
+         ;
+         font-size: 16px;
+         font-family: 'Libre Baskerville', serif;
+         font-style: italic;
+         color: #000;
+         display: block;
+      }
+
+      blockquote::before {
+         position: absolute;
+         content: '“';
+         left: 25px;
+         top: 0;
+         font-size: 50px;
+         color: #999;
+      }
+
+      .col-md-4.mb-4.m-md-1.p-md-0 {
+         width: 36.5%;
+      }
+
+      @media screen and (max-width: 767px) {
+         .col-md-4.mb-4.m-md-1.p-md-0 {
+            width: 100%;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <section class="header-section">
+      <div class="container">
+         <div class="row d-flex align-items-center position-relative">
+            <div class="col-md-2 d-none d-lg-block">
+               <a class="d-block navbar-brand" href="../index.html"><img src="../img/logo/logo1.png" alt="" /></a>
+            </div>
+            <div class="col-md-1 d-none d-lg-block brand_wrap">
+               <a class="d-inline-block py-3" href="#">Brands</a>
+               <div class="row bg-white border-top py-3 brand_menu">
+                  <div class="col-3 brand_items">
+                     <ul>
+                        <li class="text-uppercase mb-3">top brands</li>
+                        <li><a href="#" class="text-uppercase">nicka k<span class="text-black rounded px-1 ms-2">320</span></a></li>
+                        <li><a href="#">Flormar<span class="text-black rounded px-1 ms-2">261</span></a></li>
+                        <li><a href="#">The Body Shop<span class="text-black rounded px-1 ms-2">250</span></a></li>
+                        <li><a href="#">L'Oreal<span class="text-black rounded px-1 ms-2">246</span></a></li>
+                        <li><a href="#">Pierre Cardin<span class="text-black rounded px-1 ms-2">320</span></a></li>
+                        <li><a href="#">Revlon<span class="text-black rounded px-1 ms-2">209</span></a></li>
+                        <li><a href="#">Pastel<span class="text-black rounded px-1 ms-2">200</span></a></li>
+                        <li><a href="#">Dove<span class="text-black rounded px-1 ms-2">198</span></a></li>
+                        <li><a href="#">Nivea<span class="text-black rounded px-1 ms-2">196</span></a></li>
+                        <li><a href="#">Topface<span class="text-black rounded px-1 ms-2">196</span></a></li>
+                        <li><a href="#">Technic<span class="text-black rounded px-1 ms-2">169</span></a></li>
+                        <li class="mb-2"><a href="#">SKINFOOD<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li class="mb-3">ALL BRANDS</li>
+                        <li>#</li>
+                        <li><a href="#">[SOME BY MI]<span class="text-black rounded px-1 ms-2">32</span></a></li>
+                        <li><a href="#">3W Clinic 46<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                        <li><a href="#">SKINFOOD 131<span class="text-black rounded px-1 ms-2">131</span></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-9 brand_name">
+                     <h4 class="text-center py-2">TOP BRANDS</h4>
+                     <img src="img/brands/brands.png" class="mx-auto" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex align-items-center d-lg-none my-lg-3 my-3">
+               <div class="d-lg-none" id="sideBarOpen" style="cursor: pointer;">
+                  <img class="w-75" src="../img/hamburger-black.svg" alt="" />
+               </div>
+               <div class="d-lg-none m-auto" style="max-width: 200px">
+                  <a class="m-auto img-fluid w-75" href="../index.html"><img src="../img/logo/logo1.png" alt="logo" /></a>
+               </div>
+            </div>
+            <!-- search menu -->
+            <div class="col-9 ps-0 justify-content-end d-none d-lg-inline-flex">
+               <div class="search_wrap mx-1">
+                  <form action="/action_page.php">
+                     <div class="input-group">
+                        <button class="btn" type="submit">
+                           <span class="icon-magnifying-glass"></span>
+                        </button>
+                        <input type="search" class="form-control" id="search" placeholder="Type your text..." />
+                     </div>
+                  </form>
+               </div>
+               <div onclick="window.location.href='../account.html';" class="account position-relative mx-1">
+                  <a href="#" class="rounded">my account</a>
+                  <div class="account-info">
+                     <a href="#">login / register</a>
+                  </div>
+               </div>
+               <div class="shop-menu mx-1" id="openCartMenuNav">
+                  <a href="#" class="text-white rounded"><span class="icon-shopbag me-1"></span>bag (0)</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <!-- mobile view search menu -->
+         <div class="search_wrap w-100 d-lg-none">
+            <form action="/action_page.php" class="my-lg-3 my-3 p-0">
+               <div class="input-group">
+                  <button class="btn" type="submit">
+                     <span class="icon-magnifying-glass"></span>
+                  </button>
+                  <input type="search" class="form-control" id="search" placeholder="Type your text..." />
+               </div>
+            </form>
+         </div>
+         <!-- end search section fon nav -->
+         <nav class="d-none d-lg-block border-top">
+            <ul class="nav position-relative">
+               <li class="m-auto" id="dropdown-menu">
+                  <a href="#" class="py-3">makeup</a>
+                  <div class="p-0 position-absolute bg-white w-100 start-0 d-table" id="dropdown_item">
+                     <ul class="d-table-cell px-3 py-1">
+                        <li> <a href="#" class="text-black fw-bold">face</a></li>
+                        <li> <a href="#">Face Primer</a></li>
+                        <li> <a href="#">Concealer</a></li>
+                        <li> <a href="#">Foundation</a></li>
+                        <li> <a href="#">Compact & Pressed Powder</a></li>
+                        <li> <a href="#">Contour</a></li>
+                        <li> <a href="#">Loose Powder</a></li>
+                        <li> <a href="#">Blush</a></li>
+                        <li><a href="#">Bronzer</a></li>
+                        <li> <a href="#">Tinted Moisturizer</a></li>
+                        <li> <a href="#">BB & CC cream</a></li>
+                        <li> <a href="#">Highlighters</a></li>
+                        <li> <a href="#">Makeup Remover</a></li>
+                        <li><a href="#">Setting Spray</a></li>
+                        <li><a href="#">Face Pallete</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li> <a href="#" class="text-black fw-bold">EYES</a></li>
+                        <li> <a href="#">Kajal</a></li>
+                        <li> <a href="#">Eyeliner</a></li>
+                        <li> <a href="#">Mascara</a></li>
+                        <li> <a href="#">Eye Shadow</a></li>
+                        <li> <a href="#">Eye Brow Enhancers</a></li>
+                        <li> <a href="#">Eye Primer</a></li>
+                        <li> <a href="#">False Eyelashes</a></li>
+                        <li><a href="#">Eye Makeup Remover</a></li>
+                        <li><a href="#">Under Eye Concealer</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li> <a href="#" class="text-black fw-bold">LIPS</a></li>
+                        <li> <a href="#">Lipstick</a></li>
+                        <li> <a href="#">Liquid Lipsticks</a></li>
+                        <li> <a href="#">Lip Crayon</a></li>
+                        <li> <a href="#">Lip Gloss</a></li>
+                        <li> <a href="#">Lip Liner</a></li>
+                        <li> <a href="#">Lip Plumper</a></li>
+                        <li> <a href="#">Lip Stain</a></li>
+                        <li> <a href="#">Lip Balm</a></li>
+                        <li> <a href="#">Lip Exfoliator</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li> <a href="#" class="text-black fw-bold">NAILS</a></li>
+                        <li> <a href="#">Nail Polish</a></li>
+                        <li> <a href="#">Nail Art Kits</a></li>
+                        <li> <a href="#">Nail Polish Sets</a></li>
+                        <li> <a href="#">Nail Care</a></li>
+                        <li><a href="#">Nail Polish Remover</a></li>
+                        <li> <a href="#">Manicure & Pedicure Kits</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li> <a href="#" class="text-black fw-bold">TOOLS & BRUSHES</a></li>
+                        <li> <a href="#">Face Brush</a></li>
+                        <li> <a href="#">Blush Brush</a></li>
+                        <li> <a href="#">Eye Brush</a></li>
+                        <li> <a href="#">Lip Brush</a></li>
+                        <li> <a href="#">Brush Sets</a></li>
+                        <li> <a href="#">Eyelash Curlers</a></li>
+                        <li> <a href="#">Sponges & Applicators</a></li>
+                        <li> <a href="#">Tweezers</a></li>
+                        <li> <a href="#">Sharpeners</a></li>
+                        <li><a href="#">Mirrors</a></li>
+                        <li><a href="#">Makeup Pouches</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">TOP BRAND</a></li>
+                        <li> <a href="#">Wet n wild</a></li>
+                        <li><a href="#">Technic</a></li>
+                        <li><a href="#">W7</a></li>
+                        <li><a href="#">Flormar</a></li>
+                        <li><a href="#">Rimmel</a></li>
+                        <li><a href="#">L’Oreal</a></li>
+                        <li><a href="#">Milani</a></li>
+                        <li><a href="#">Revlon</a></li>
+                        <li><a href="#">M.A.C</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto" id="dropdown-menu">
+                  <a href="#" class="py-3">skin</a>
+                  <div class="p-0 position-absolute bg-white w-100 start-0 d-table" id="dropdown_item">
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">face</a></li>
+                        <li><a href="#">Cleanser</a></li>
+                        <li><a href="#">Day Cream</a></li>
+                        <li><a href="#">Night Cream</a></li>
+                        <li><a href="#">Day & Night Cream</a></li>
+                        <li> <a href="#">Facewash</a></li>
+                        <li><a href="#">Masks & Peels</a></li>
+                        <li><a href="#">Sleeping Mask</a></li>
+                        <li><a href="#">Scrubs & Exfoliators</a></li>
+                        <li><a href="#">Toners & Astringents</a></li>
+                        <li><a href="#">Sheet Mask</a></li>
+                        <li><a href="#">Facial Wipes</a></li>
+                        <li> <a href="#">Serums/Oils</a></li>
+                        <li><a href="#">Essence/Ampoule</a></li>
+                        <li> <a href="#">Moisturizer</a></li>
+                        <li> <a href="#">Facial Kit</a></li>
+                        <li> <a href="#">Spot Remover</a></li>
+                        <li> <a href="#">LIP BALMS/LIP CARE</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">K- BEAUTY</a></li>
+                        <li><a href="#">Cleanser/Cleansing Oil</a></li>
+                        <li><a href="#">Essence</a></li>
+                        <li><a href="#">Ampoule</a></li>
+                        <li><a href="#">Face Packs & Peels</a></li>
+                        <li><a href="#">Moisturizers</a></li>
+                        <li><a href="#">Scrubs & Exfoliators</a></li>
+                        <li> <a href="#">Serums & Oils</a></li>
+                        <li> <a href="#">Sheet Mask</a></li>
+                        <li> <a href="#">Sunscreen</a></li>
+                        <li> <a href="#">Toners & Astringents</a></li>
+                        <li> <a href="#">Cleansing oil</a></li>
+                        <li> <a href="#">Eye cream/gel/patch</a></li>
+                        <li> <a href="#">Face wash/Cleanser</a></li>
+                        <li> <a href="#">Facial Wipes</a></li>
+                        <li> <a href="#">Hair care</a></li>
+                        <li><a href="#">Sleeping mask/Mask</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">HAND & FEET</a></li>
+                        <li><a href="#">Hand Creams</a></li>
+                        <li><a href="#">Foot Creams</a></li>
+                        <li><a href="#" class="text-black fw-bold">SUN CARE</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">BODY</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                        <li> <a href="#">Body Butter</a></li>
+                        <li><a href="#">Body Mist/Spray</a></li>
+                        <li><a href="#">Deodorants/Roll-Ons</a></li>
+                        <li><a href="#">Lotions & Creams</a></li>
+                        <li><a href="#">Anti-Stretch Mark Creams</a></li>
+                        <li><a href="#">Body Scrubs</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">EYE CARE</a></li>
+                        <li><a href="#">Eye Cream</a></li>
+                        <li><a href="#">Eye Gel</a></li>
+                        <li><a href="#">Eye Roller</a></li>
+                        <li><a href="#">Under Eye Cream</a></li>
+                        <li><a href="#">Dark Circles / Wrinkles</a></li>
+                        <li><a href="#">Puffiness</a></li>
+                        <li><a href="#">Day/Night Cream</a></li>
+                        <li><a href="#">Eye Makeup Remover</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">SHOP BY CONCERN</a></li>
+                        <li><a href="#">Skin Lightening</a></li>
+                        <li><a href="#">Sun Protection</a></li>
+                        <li><a href="#">Tan Removal</a></li>
+                        <li><a href="#">Pigmentation</a></li>
+                        <li><a href="#">Acne Treatment</a></li>
+                        <li><a href="#">Anti Aging</a></li>
+                        <li><a href="#">Oil Control</a></li>
+                        <li><a href="#">Cold Protection</a></li>
+                        <li><a href="#">Dull Skin Treatment</a></li>
+                        <li><a href="#">Pore Care</a></li>
+                        <li><a href="#">Dry Skin Remedy</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto" id="dropdown-menu">
+                  <a href="#" class="py-3">hair</a>
+                  <div class="p-0 position-absolute bg-white w-100 start-0 d-table" id="dropdown_item">
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">HAIR CARE</a></li>
+                        <li><a href="#">Shampoo</a></li>
+                        <li><a href="#">Conditioner</a></li>
+                        <li><a href="#">Hair Oil</a></li>
+                        <li><a href="#">Hair Cream & Masks</a></li>
+                        <li><a href="#">Hair Serum</a></li>
+                        <li><a href="#">Rebonding Kit</a></li>
+                        <li><a href="#">Value Pack</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">HAIR STYLING</a></li>
+                        <li><a href="#">Hair Color</a></li>
+                        <li><a href="#">Hair Spray</a></li>
+                        <li><a href="#">Gels & Waxes</a></li>
+                        <li><a href="#">Hair Primer</a></li>
+                        <li><a href="#">Hair Mousse</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">TOOLS & ACCESSORIES</a></li>
+                        <li><a href="#">Hair Combs</a></li>
+                        <li><a href="#">Hair straightener</a></li>
+                        <li><a href="#">Hair Dryer</a></li>
+                        <li><a href="#">Hair Band</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">SHOP BY HAIR TYPE</a></li>
+                        <li><a href="#">Straight</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">SHOP BY CONCERN</a></li>
+                        <li><a href="#">Hairfall & Thinning</a></li>
+                        <li><a href="#">Dandruff</a></li>
+                        <li><a href="#">Dry & Frizzy Hair</a></li>
+                        <li><a href="#">Split Ends</a></li>
+                        <li><a href="#">Color Protection</a></li>
+                        <li><a href="#">Curly & Wavy</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto" id="dropdown-menu">
+                  <a href="#" class="py-3">personal care</a>
+                  <div class="p-0 position-absolute bg-white w-100 start-0 d-table" id="dropdown_item">
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">BATH & SHOWER</a></li>
+                        <li><a href="#">Scrubs & Exfoliants</a></li>
+                        <li><a href="#">Shower Gels & Body Wash</a></li>
+                        <li><a href="#">Soaps</a></li>
+                        <li><a href="#">Talcum Powder</a></li>
+                        <li><a href="#" class="text-black fw-bold">TOOLS & ACCESSORIES</a></li>
+                        <li><a href="#">Loofahs & Sponges</a></li>
+                        <li><a href="#">Travel Makeup Bag</a></li>
+                        <li><a href="#">Hair straightener</a></li>
+                        <li><a href="#">Hair Dryer</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">FEMININE HYGIENE</a></li>
+                        <li><a href="#">Sanitary Napkins</a></li>
+                        <li><a href="#">Shaving & Hair Removal</a></li>
+                        <li><a href="#">Feminine Cleanser</a></li>
+                        <li><a href="#" class="text-black fw-bold">FEMININE CARE</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">BODY</a></li>
+                        <li><a href="#">Toiletries</a></li>
+                        <li><a href="#">Lotions & Creams</a></li>
+                        <li><a href="#">Talcum Powder</a></li>
+                        <li><a href="#">Deodorants/Roll Ons</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">FACE</a></li>
+                        <li><a href="#">Facewash</a></li>
+                        <li><a href="#">Moisturizer</a></li>
+                        <li><a href="#">Moisturizer</a></li>
+                        <li><a href="#">Face Wipes</a></li>
+                        <li><a href="#" class="text-black fw-bold">NATURAL</a></li>
+                        <li><a href="#">Facewash</a></li>
+                        <li><a href="#">Serums</a></li>
+                        <li><a href="#">Sheet Mask</a></li>
+                        <li><a href="#">Body Butter</a></li>
+                        <li><a href="#">Masks & Peels</a></li>
+                        <li><a href="#">Shower Gels & Body Wash</a></li>
+                        <li><a href="#">Toners & Astringents</a></li>
+                        <li><a href="#">Scrubs & Exfoliators</a></li>
+                        <li><a href="#">Hair Mask</a></li>
+                        <li><a href="#">Moisturizer</a></li>
+                        <li><a href="#">Shampoo & Conditioner</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">HANDS & FEET</a></li>
+                        <li><a href="#">Feet Puff</a></li>
+                        <li><a href="#">Foot Care</a></li>
+                        <li><a href="#">Foot Set</a></li>
+                        <li><a href="#">Foot Scrub</a></li>
+                        <li><a href="#">Hand Sanitizer</a></li>
+                        <li><a href="#">Hand Wash</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">WELLNESS</a></li>
+                        <li><a href="#">Face Mask</a></li>
+                        <li><a href="#">Weightloss</a></li>
+                        <li><a href="#">Sexual Wellness</a></li>
+                        <li><a href="#" class="text-black fw-bold">SHOP BY CONCERN</a></li>
+                        <li><a href="#">Covid-19</a></li>
+                        <li><a href="#">Asthma</a></li>
+                        <li><a href="#" class="text-black fw-bold">HEALTH & FITNESS</a></li>
+                        <li><a href="#" class="text-black fw-bold">CLOTHING & MORE</a></li>
+                        <li><a href="#">Trouser</a></li>
+                        <li><a href="#">Leggings</a></li>
+                        <li><a href="#" class="text-black fw-bold">ORAL CARE</a></li>
+                        <li><a href="#" class="text-black fw-bold">APPLIANCES</a></li>
+                        <li><a href="#" class="text-black fw-bold">HOME CARE</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto position-relative" id="dropdown-menu">
+                  <a href="#" class="py-1">mom & baby</a>
+                  <div class="position-absolute bg-white" id="dropdown_item">
+                     <ul class="px-3 py-1">
+                        <li><a href="#">Baby Products</a></li>
+                        <li><a href="#">Creams & Moisturizers</a></li>
+                        <li><a href="#">Lotion</a></li>
+                        <li><a href="#">Oil</a></li>
+                        <li><a href="#">Powder</a></li>
+                        <li><a href="#">Shampoo</a></li>
+                        <li><a href="#">Soap & Bodywash</a></li>
+                        <li><a href="#">Wipes</a></li>
+                        <li><a href="#">Bath Time</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                        <li><a href="#">Baby Care</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto position-relative" id="dropdown-menu">
+                  <a href="#" class="py-1">fragrance</a>
+                  <div class="position-absolute bg-white" id="dropdown_item">
+                     <ul class="px-3 py-1">
+                        <li><a href="#">Deodorants/Roll-Ons</a></li>
+                        <li><a href="#">Body Mist/Spray</a></li>
+                        <li><a href="#">Perfumes (EDT/EDP)</a></li>
+                        <li><a href="#">High-end Perfume</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto position-relative" id="dropdown-menu">
+                  <a href="#" class="text-white px-2 py-1 rounded text-uppercase" style="background: #225ce4">undergarments</a>
+                  <div class="position-absolute bg-white" id="dropdown_item">
+                     <ul class="px-3 py-1">
+                        <li><a href="#">bra</a></li>
+                        <li><a href="#">panty</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="m-auto"><a href="#" class="text-white px-2 py-1 rounded text-uppercase" style="background: #e72670">eid sale 2022</a></li>
+               <li class="m-auto"><a href="#" class="text-white px-2 py-1 rounded text-uppercase" style="background: #b047c9">buy 1 get 1</a></li>
+               <li class="m-auto"><a href="#" class="text-white px-2 py-1 rounded text-uppercase" style="background: #09b5b5">clearance sale</a></li>
+               <li class="m-auto" id="dropdown-menu">
+                  <a href="#" class="text-white px-2 py-1 rounded text-uppercase" style="background: #09b566">men</a>
+                  <div class="p-0 position-absolute bg-white w-100 start-0 d-table" id="dropdown_item">
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">BATH & BODY</a></li>
+                        <li><a href="#">Body Lotion</a></li>
+                        <li><a href="#">Body Wash & Shower Gel</a></li>
+                        <li><a href="#">Soap</a></li>
+                        <li><a href="#">Talcum Powder</a></li>
+                        <li><a href="#" class="text-black fw-bold">FRAGRANCES</a></li>
+                        <li><a href="#">Body Spray</a></li>
+                        <li><a href="#">Deodorant & Roll On</a></li>
+                        <li><a href="#">Perfume & Cologne</a></li>
+                        <li><a href="#">High-end Perfume</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">HAIR CARE</a></li>
+                        <li><a href="#">Conditioner</a></li>
+                        <li><a href="#">Hair Oil</a></li>
+                        <li><a href="#">Hair Color</a></li>
+                        <li><a href="#">Hair Styling</a></li>
+                        <li><a href="#">Shampoo</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">SHAVING</a></li>
+                        <li><a href="#">Aftershave Lotion/Balm</a></li>
+                        <li><a href="#">Beard and Moustache care</a></li>
+                        <li><a href="#">Razor</a></li>
+                        <li><a href="#">Shaving Brush</a></li>
+                        <li><a href="#">Shaving cream, Foam & Gel</a></li>
+                        <li> <a href="#">Trimmers</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">SKIN CARE</a></li>
+                        <li><a href="#">Face Masks & Peels</a></li>
+                        <li><a href="#">Face Wash</a></li>
+                        <li><a href="#">Fairness</a></li>
+                        <li> <a href="#">Moisturizer</a></li>
+                        <li><a href="#">Scrubs & Exfoliators</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                        <li><a href="#">Whitening Cream</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1">
+                        <li><a href="#" class="text-black fw-bold">TOP BRANDS</a></li>
+                        <li><a href="#">David Beckham</a></li>
+                        <li><a href="#">FOGG</a></li>
+                        <li> <a href="#">Garnier</a></li>
+                        <li> <a href="#">Gatsby</a></li>
+                        <li><a href="#">Gillette</a></li>
+                        <li><a href="#">Nivea</a></li>
+                        <li><a href="#">OXY</a></li>
+                        <li><a href="#">Pond’s Men</a></li>
+                        <li><a href="#">Set Wet</a></li>
+                     </ul>
+                     <ul class="d-table-cell px-3 py-1 bg-light">
+                        <li><a href="#" class="text-black fw-bold">SHOP BY CONCERN</a></li>
+                        <li><a href="#">Acne Solution</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                        <li><a href="#">Anti-Dandruff</a></li>
+                        <li><a href="#">Anti-Hairfall</a></li>
+                        <li><a href="#">Dry Skin Care</a></li>
+                        <li><a href="#">Oil Control</a></li>
+                        <li><a href="#">Pore Care</a></li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+         <!-- Page Content -->
+         <div class="menu_overlay" id="sidebarOverlay"></div>
+         <!-- sidebar menu -->
+         <nav class="d-lg-none position-fixed nav_hide" id="sidebarMenu">
+            <div class="nav-title py-3 border-bottom border-2 d-flex align-items-center">
+               <h4 class="m-auto text-black text-uppercase">menu</h4>
+               <span class="icon-xmark me-4 position-absolute end-0" id="sidebarClose"></span>
+            </div>
+            <div class="text-center mt-5">
+               <a href="../account.html" class="d-inline-block"><span class="icon-user"></span></a>
+            </div>
+            <ul class="px-3 mt-4 hide_menu">
+               <li class="sub_menu">
+                  <a href="#">makeup </a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li class="sub_menu"><a href="#">face</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li> <a href="#">Face Primer</a></li>
+                           <li> <a href="#">Concealer</a></li>
+                           <li> <a href="#">Foundation</a></li>
+                           <li> <a href="#">Compact & Pressed Powder</a></li>
+                           <li> <a href="#">Contour</a></li>
+                           <li> <a href="#">Loose Powder</a></li>
+                           <li> <a href="#">Blush</a></li>
+                           <li><a href="#">Bronzer</a></li>
+                           <li> <a href="#">Tinted Moisturizer</a></li>
+                           <li> <a href="#">BB & CC cream</a></li>
+                           <li> <a href="#">Highlighters</a></li>
+                           <li> <a href="#">Makeup Remover</a></li>
+                           <li><a href="#">Setting Spray</a></li>
+                           <li><a href="#">Face Pallete</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">EYES</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li> <a href="#">Kajal</a></li>
+                           <li> <a href="#">Eyeliner</a></li>
+                           <li> <a href="#">Mascara</a></li>
+                           <li> <a href="#">Eye Shadow</a></li>
+                           <li> <a href="#">Eye Brow Enhancers</a></li>
+                           <li> <a href="#">Eye Primer</a></li>
+                           <li> <a href="#">False Eyelashes</a></li>
+                           <li><a href="#">Eye Makeup Remover</a></li>
+                           <li><a href="#">Under Eye Concealer</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">Lips</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li> <a href="#">Lipstick</a></li>
+                           <li> <a href="#">Liquid Lipsticks</a></li>
+                           <li> <a href="#">Lip Crayon</a></li>
+                           <li> <a href="#">Lip Gloss</a></li>
+                           <li> <a href="#">Lip Liner</a></li>
+                           <li> <a href="#">Lip Plumper</a></li>
+                           <li> <a href="#">Lip Stain</a></li>
+                           <li> <a href="#">Lip Balm</a></li>
+                           <li> <a href="#">Lip Exfoliator</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">NAILS</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li> <a href="#">Nail Polish</a></li>
+                           <li> <a href="#">Nail Art Kits</a></li>
+                           <li> <a href="#">Nail Polish Sets</a></li>
+                           <li> <a href="#">Nail Care</a></li>
+                           <li><a href="#">Nail Polish Remover</a></li>
+                           <li> <a href="#">Manicure & Pedicure Kits</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">TOOLS & BRUSHES</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li> <a href="#">Face Brush</a></li>
+                           <li> <a href="#">Blush Brush</a></li>
+                           <li> <a href="#">Eye Brush</a></li>
+                           <li> <a href="#">Lip Brush</a></li>
+                           <li> <a href="#">Brush Sets</a></li>
+                           <li> <a href="#">Eyelash Curlers</a></li>
+                           <li> <a href="#">Sponges & Applicators</a></li>
+                           <li> <a href="#">Tweezers</a></li>
+                           <li> <a href="#">Sharpeners</a></li>
+                           <li><a href="#">Mirrors</a></li>
+                           <li><a href="#">Makeup Pouches</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">TOP BRAND</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li> <a href="#">Wet n wild</a></li>
+                           <li><a href="#">Technic</a></li>
+                           <li><a href="#">W7</a></li>
+                           <li><a href="#">Flormar</a></li>
+                           <li><a href="#">Rimmel</a></li>
+                           <li><a href="#">L’Oreal</a></li>
+                           <li><a href="#">Milani</a></li>
+                           <li><a href="#">Revlon</a></li>
+                           <li><a href="#">M.A.C</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sub_menu">
+                  <a href="#">skin</a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li class="sub_menu"><a href="#">face</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Cleanser</a></li>
+                           <li><a href="#">Day Cream</a></li>
+                           <li><a href="#">Night Cream</a></li>
+                           <li><a href="#">Day & Night Cream</a></li>
+                           <li> <a href="#">Facewash</a></li>
+                           <li><a href="#">Masks & Peels</a></li>
+                           <li><a href="#">Sleeping Mask</a></li>
+                           <li><a href="#">Scrubs & Exfoliators</a></li>
+                           <li><a href="#">Toners & Astringents</a></li>
+                           <li><a href="#">Sheet Mask</a></li>
+                           <li><a href="#">Facial Wipes</a></li>
+                           <li> <a href="#">Serums/Oils</a></li>
+                           <li><a href="#">Essence/Ampoule</a></li>
+                           <li> <a href="#">Moisturizer</a></li>
+                           <li> <a href="#">Facial Kit</a></li>
+                           <li> <a href="#">Spot Remover</a></li>
+                           <li> <a href="#">LIP BALMS/LIP CARE</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">K- BEAUTY</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Cleanser/Cleansing Oil</a></li>
+                           <li><a href="#">Essence</a></li>
+                           <li><a href="#">Ampoule</a></li>
+                           <li><a href="#">Face Packs & Peels</a></li>
+                           <li><a href="#">Moisturizers</a></li>
+                           <li><a href="#">Scrubs & Exfoliators</a></li>
+                           <li> <a href="#">Serums & Oils</a></li>
+                           <li> <a href="#">Sheet Mask</a></li>
+                           <li> <a href="#">Sunscreen</a></li>
+                           <li> <a href="#">Toners & Astringents</a></li>
+                           <li> <a href="#">Cleansing oil</a></li>
+                           <li> <a href="#">Eye cream/gel/patch</a></li>
+                           <li> <a href="#">Face wash/Cleanser</a></li>
+                           <li> <a href="#">Facial Wipes</a></li>
+                           <li> <a href="#">Hair care</a></li>
+                           <li><a href="#">Sleeping mask/Mask</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">HAND & FEET</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Hand Creams</a></li>
+                           <li><a href="#">Foot Creams</a></li>
+                           <li><a href="#">SUN CARE</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">BODY</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Sunscreen</a></li>
+                           <li> <a href="#">Body Butter</a></li>
+                           <li><a href="#">Body Mist/Spray</a></li>
+                           <li><a href="#">Deodorants/Roll-Ons</a></li>
+                           <li><a href="#">Lotions & Creams</a></li>
+                           <li><a href="#">Anti-Stretch Mark Creams</a></li>
+                           <li><a href="#">Body Scrubs</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">EYE CARE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Eye Cream</a></li>
+                           <li><a href="#">Eye Gel</a></li>
+                           <li><a href="#">Eye Roller</a></li>
+                           <li><a href="#">Under Eye Cream</a></li>
+                           <li><a href="#">Dark Circles / Wrinkles</a></li>
+                           <li><a href="#">Puffiness</a></li>
+                           <li><a href="#">Day/Night Cream</a></li>
+                           <li><a href="#">Eye Makeup Remover</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">SHOP BY CONCERN</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Skin Lightening</a></li>
+                           <li><a href="#">Sun Protection</a></li>
+                           <li><a href="#">Tan Removal</a></li>
+                           <li><a href="#">Pigmentation</a></li>
+                           <li><a href="#">Acne Treatment</a></li>
+                           <li><a href="#">Anti Aging</a></li>
+                           <li><a href="#">Oil Control</a></li>
+                           <li><a href="#">Cold Protection</a></li>
+                           <li><a href="#">Dull Skin Treatment</a></li>
+                           <li><a href="#">Pore Care</a></li>
+                           <li><a href="#">Dry Skin Remedy</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sub_menu">
+                  <a href="#">hair</a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li class="sub_menu"><a href="#">HAIR CARE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Shampoo</a></li>
+                           <li><a href="#">Conditioner</a></li>
+                           <li><a href="#">Hair Oil</a></li>
+                           <li><a href="#">Hair Cream & Masks</a></li>
+                           <li><a href="#">Hair Serum</a></li>
+                           <li><a href="#">Rebonding Kit</a></li>
+                           <li><a href="#">Value Pack</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">HAIR STYLING</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Hair Color</a></li>
+                           <li><a href="#">Hair Spray</a></li>
+                           <li><a href="#">Gels & Waxes</a></li>
+                           <li><a href="#">Hair Primer</a></li>
+                           <li><a href="#">Hair Mousse</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">TOOLS & ACCESSORIES</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Hair Combs</a></li>
+                           <li><a href="#">Hair straightener</a></li>
+                           <li><a href="#">Hair Dryer</a></li>
+                           <li><a href="#">Hair Band</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">SHOP BY HAIR TYPE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Straight</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">SHOP BY CONCERN</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Hairfall & Thinning</a></li>
+                           <li><a href="#">Dandruff</a></li>
+                           <li><a href="#">Dry & Frizzy Hair</a></li>
+                           <li><a href="#">Split Ends</a></li>
+                           <li><a href="#">Color Protection</a></li>
+                           <li><a href="#">Curly & Wavy</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sub_menu">
+                  <a href="#">personal care</a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li class="sub_menu"><a href="#">BATH & SHOWER</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Scrubs & Exfoliants</a></li>
+                           <li><a href="#">Shower Gels & Body Wash</a></li>
+                           <li><a href="#">Soaps</a></li>
+                           <li><a href="#">Talcum Powder</a></li>
+                           <li><a href="#">TOOLS & ACCESSORIES</a></li>
+                           <li><a href="#">Loofahs & Sponges</a></li>
+                           <li><a href="#">Travel Makeup Bag</a></li>
+                           <li><a href="#">Hair straightener</a></li>
+                           <li><a href="#">Hair Dryer</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">FEMININE HYGIENE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Sanitary Napkins</a></li>
+                           <li><a href="#">Shaving & Hair Removal</a></li>
+                           <li><a href="#">Feminine Cleanser</a></li>
+                           <li><a href="#">FEMININE CARE</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">BODY</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Toiletries</a></li>
+                           <li><a href="#">Lotions & Creams</a></li>
+                           <li><a href="#">Talcum Powder</a></li>
+                           <li><a href="#">Deodorants/Roll Ons</a></li>
+                           <li><a href="#">Sunscreen</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">FACE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Facewash</a></li>
+                           <li><a href="#">Moisturizer</a></li>
+                           <li><a href="#">Moisturizer</a></li>
+                           <li><a href="#">Face Wipes</a></li>
+                           <li><a href="#">NATURAL</a></li>
+                           <li><a href="#">Facewash</a></li>
+                           <li><a href="#">Serums</a></li>
+                           <li><a href="#">Sheet Mask</a></li>
+                           <li><a href="#">Body Butter</a></li>
+                           <li><a href="#">Masks & Peels</a></li>
+                           <li><a href="#">Shower Gels & Body Wash</a></li>
+                           <li><a href="#">Toners & Astringents</a></li>
+                           <li><a href="#">Scrubs & Exfoliators</a></li>
+                           <li><a href="#">Hair Mask</a></li>
+                           <li><a href="#">Moisturizer</a></li>
+                           <li><a href="#">Shampoo & Conditioner</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">HANDS & FEET</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Feet Puff</a></li>
+                           <li><a href="#">Foot Care</a></li>
+                           <li><a href="#">Foot Set</a></li>
+                           <li><a href="#">Foot Scrub</a></li>
+                           <li><a href="#">Hand Sanitizer</a></li>
+                           <li><a href="#">Hand Wash</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">WELLNESS</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Face Mask</a></li>
+                           <li><a href="#">Weightloss</a></li>
+                           <li><a href="#">Sexual Wellness</a></li>
+                           <li><a href="#">SHOP BY CONCERN</a></li>
+                           <li><a href="#">Covid-19</a></li>
+                           <li><a href="#">Asthma</a></li>
+                           <li><a href="#">HEALTH & FITNESS</a></li>
+                           <li><a href="#">CLOTHING & MORE</a></li>
+                           <li><a href="#">Trouser</a></li>
+                           <li><a href="#">Leggings</a></li>
+                           <li><a href="#">ORAL CARE</a></li>
+                           <li><a href="#">APPLIANCES</a></li>
+                           <li><a href="#">HOME CARE</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sub_menu">
+                  <a href="#">mom & baby</a>
+                  <span class="icon-plus float-end"></span>
+                  <ul class="ms-3">
+                     <li><a href="#">Baby Products</a></li>
+                     <li><a href="#">Creams & Moisturizers</a></li>
+                     <li><a href="#">Lotion</a></li>
+                     <li><a href="#">Oil</a></li>
+                     <li><a href="#">Powder</a></li>
+                     <li><a href="#">Shampoo</a></li>
+                     <li><a href="#">Soap & Bodywash</a></li>
+                     <li><a href="#">Wipes</a></li>
+                     <li><a href="#">Bath Time</a></li>
+                     <li><a href="#">Sunscreen</a></li>
+                     <li><a href="#">Baby Care</a></li>
+                  </ul>
+               </li>
+               <li class="sub_menu">
+                  <a href="#">fragrance</a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li><a href="#">Deodorants/Roll-Ons</a></li>
+                     <li><a href="#">Body Mist/Spray</a></li>
+                     <li><a href="#">Perfumes (EDT/EDP)</a></li>
+                     <li><a href="#">High-end Perfume</a></li>
+                  </ul>
+               </li>
+               <li class="sub_menu">
+                  <a href="#">undergarments</a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li><a href="#">bra</a></li>
+                     <li><a href="#">panty</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">eid sale 2022</a></li>
+               <li><a href="#">buy 1 get 1</a></li>
+               <li><a href="#">clearance sale</a></li>
+               <li class="sub_menu">
+                  <a href="#">men</a>
+                  <span></span>
+                  <ul class="ms-3">
+                     <li class="sub_menu"><a href="#">BATH & BODY</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Body Lotion</a></li>
+                           <li><a href="#">Body Wash & Shower Gel</a></li>
+                           <li><a href="#">Soap</a></li>
+                           <li><a href="#">Talcum Powder</a></li>
+                           <li><a href="#">FRAGRANCES</a></li>
+                           <li><a href="#">Body Spray</a></li>
+                           <li><a href="#">Deodorant & Roll On</a></li>
+                           <li><a href="#">Perfume & Cologne</a></li>
+                           <li><a href="#">High-end Perfume</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">HAIR CARE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Conditioner</a></li>
+                           <li><a href="#">Hair Oil</a></li>
+                           <li><a href="#">Hair Color</a></li>
+                           <li><a href="#">Hair Styling</a></li>
+                           <li><a href="#">Shampoo</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">SHAVING</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Aftershave Lotion/Balm</a></li>
+                           <li><a href="#">Beard and Moustache care</a></li>
+                           <li><a href="#">Razor</a></li>
+                           <li><a href="#">Shaving Brush</a></li>
+                           <li><a href="#">Shaving cream, Foam & Gel</a></li>
+                           <li> <a href="#">Trimmers</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">SKIN CARE</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Face Masks & Peels</a></li>
+                           <li><a href="#">Face Wash</a></li>
+                           <li><a href="#">Fairness</a></li>
+                           <li> <a href="#">Moisturizer</a></li>
+                           <li><a href="#">Scrubs & Exfoliators</a></li>
+                           <li><a href="#">Sunscreen</a></li>
+                           <li><a href="#">Whitening Cream</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">TOP BRANDS</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">David Beckham</a></li>
+                           <li><a href="#">FOGG</a></li>
+                           <li> <a href="#">Garnier</a></li>
+                           <li> <a href="#">Gatsby</a></li>
+                           <li><a href="#">Gillette</a></li>
+                           <li><a href="#">Nivea</a></li>
+                           <li><a href="#">OXY</a></li>
+                           <li><a href="#">Pond’s Men</a></li>
+                           <li><a href="#">Set Wet</a></li>
+                        </ul>
+                     </li>
+                     <li class="sub_menu"><a href="#">SHOP BY CONCERN</a>
+                        <span></span>
+                        <ul class="ms-3">
+                           <li><a href="#">Acne Solution</a></li>
+                           <li><a href="#">Anti-Aging</a></li>
+                           <li><a href="#">Anti-Dandruff</a></li>
+                           <li><a href="#">Anti-Hairfall</a></li>
+                           <li><a href="#">Dry Skin Care</a></li>
+                           <li><a href="#">Oil Control</a></li>
+                           <li><a href="#">Pore Care</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </section>
+   <!-- End Header Section -->
+   <section class="aside-section">
+      <div class="chat-support-wrap">
+         <span class="icon-chat-support" id="chatShow"></span>
+         <div class="chat-support" id="chatSupport">
+            <div class="chat-form p-4">
+               <span class="icon-angle-down" id="chatHide"></span>
+               <div class="py-4">
+                  <img class="m-auto" src="../img/logo/logo1.png" style="max-width: 50%" alt="" />
+                  <span class="d-block mt-2 text-center">Customer Support Desk</span>
+               </div>
+               <form action="/action_page.php">
+                  <div class="form-group mb-3">
+                     <label for="chat_name" class="form-label">name</label>
+                     <input type="text" class="form-control" id="chat_name" name="chat_name" required />
+                  </div>
+                  <div class="form-group mb-3">
+                     <label for="chat_contact" class="form-label">email or phone</label>
+                     <input type="text" class="form-control" id="chat_contact" name="chat_contact" required />
+                  </div>
+                  <div class="form-group">
+                     <label for="chat_text" class="form-label">message</label>
+                     <textarea name="chat-text" class="form-control mb-3" id="chat-text" cols="10" rows="3" required></textarea>
+                     <button class="btn text-uppercase ms-auto d-block">chat with us</button>
+                  </div>
+               </form>
+            </div>
+            <div class="chat-footer">
+               <span class="d-block text-center">© Copyright Shajgoj Limited, 2022</span>
+            </div>
+         </div>
+      </div>
+      <!-- end chat support section -->
+      <div class="menu_overlay" id="cartOverlay"></div>
+      <div class="cart_wrap">
+         <div class="floating-cart text-center" id="openCartMenu">
+            <div class="floating-bag">
+               <span class="icon-shopping-bag"></span>
+               <div class="bag-item">
+                  <span>0</span>
+                  ITEMS
+               </div>
+            </div>
+            <div class="floating-bag-amount">
+               <div class="bg-amount">
+                  TK
+                  <span>0</span>
+               </div>
+            </div>
+         </div>
+         <div class="mini-cart text-center" id="hideCartMenu">
+            <div class="nav-title py-3 border-bottom border-2 d-flex align-items-center">
+               <span class="icon-xmark ms-4 position-fixed" id="colesCartMenu"></span>
+               <h4 class="m-auto text-black text-uppercase">cart</h4>
+            </div>
+            <div class="mini-cart-center text-center">
+               <span class="icon-use-shopbag"></span>
+               <span class="d-block">Your Shopping Bag is Empty</span>
+            </div>
+            <div class="mini-cart-bottom">
+               <a href="#" class="btn d-inline-flex align-items-center">start shopping<sapn class="icon-angle-right ms-3"></sapn></a>
+            </div>
+         </div>
+      </div>
+      <!-- End Shop Cart menu -->
+   </section>
+   <!-- End Aside Section -->
+   <section class="about-section">
+      <article>
+         <div class="container">
+            <img style="width: 100%; height: 148px;" src="../img/about us/banner.png" alt="">
+         </div>
+         <div class="container">
+            <div class="row" style="margin-top: 138px;">
+               <div class="col-md-5 col-lg-4 mb-4 mb-md-0 text-center text-md-start">
+                  <h5 class="mb-2">Our Mission</h5>
+                  <p>Our mission is to inspire women to be inspirational, to look beautiful, to feel confident and empowered.</p>
+               </div>
+               <div class="col-md-5 col-lg-5 mb-4 mb-md-0 text-center text-md-start">
+                  <h5 class="mb-2">Our Stories</h5>
+                  <p>Everyone is beautiful, doesn’t really matter who you are! You’re beautiful, when you’re happy. You’re happy when you appreciate your true self. Pretty face is just a small part of a woman’s personality. Your own self is the sum of your education, intelligence, sense of humour, body language, etiquette and your charm! Shajgoj will assist you in finding your true self.</p>
+                  <p>We are the experts when it comes to your beauty needs. We provide true reviews and authentic products, no replicas, no duplicates! You’re not only, special to yourself, you’re also special to us.</p>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <blockquote class="col-md-10 col-lg-9" style="background: #F1F1F1;">
+               <p class="m-0">IT”S YOU BUT NEW</p>
+            </blockquote>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-9 d-md-flex align-items-center mt-3 mb-5 mb-md-0">
+                  <div class="col-md-3 m-auto m-md-0 mb-3 mb-md-0" style="max-width: 300px;">
+                     <img style="max-width: 100%;" src="../img/about us/image-1-small.png" alt="">
+                  </div>
+                  <div class="ms-3 text-center text-md-start">
+                     <h5>Nazmul Sheik, CEO & Co-Founder</h5>
+                     <p>EEE graduate from BUET (Bangladesh University of Engineering and Technology). Before launching Shajgoj, he worked for major telecom operator MTN as a technology consultant in Nigeria.</p>
+                  </div>
+               </div>
+               <div class="col-md-9 d-md-flex align-items-center mt-3 mb-5 mb-md-0">
+                  <div class="col-md-3 m-auto m-md-0 mb-3 mb-md-0" style="max-width: 300px;">
+                     <img style="max-width: 100%;" src="../img/about us/image-2-small.png" alt="">
+                  </div>
+                  <div class="ms-3 text-center text-md-start">
+                     <h5>Sinthia Sharmin Islam, CCO & Co-Founder</h5>
+                     <p class="mb-2">A pharmacy graduate by qualification, she overlooks content especially around beauty and makeup, she also advises customers on right makeup for the right skin at their retail stores.</p>
+                     <p> She has experience in managing community pharmacy and beauty supply store, Medplus in Nigeria.</p>
+                  </div>
+               </div>
+               <div class="col-md-9 d-md-flex align-items-center mt-3">
+                  <div class="col-md-3 m-auto m-md-0 mb-3 mb-md-0" style="max-width: 300px;">
+                     <img style="max-width: 100%;" src="../img/about us/image-3-small.png" alt="">
+                  </div>
+                  <div class="ms-3 text-center text-md-start">
+                     <h5>Milky Mahmud, COO & Co-Founder</h5>
+                     <p>A CS graduate from IUT. Before co-founding Shajgoj, he was consulting for Ericsson Global as a telecom consultant, having worked in various cities in Africa.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container my-5">
+            <div class="row ps-2">
+               <div class="col-md-4 mb-4 m-md-1 p-md-0"><img class="m-auto" src="../img/about us/team/1-medium.jpg" alt=""></div>
+               <div class="col-md-4 mb-4 m-md-1 p-md-0"><img class="m-auto" src="../img/about us/team/2-medium.jpg" alt=""></div>
+               <div class="col-md-4 mb-4 m-md-1 p-md-0"><img class="m-auto" src="../img/about us/team/3-medium.jpg" alt=""></div>
+               <div class="col-md-4 mb-4 m-md-1 p-md-0"><img class="m-auto" src="../img/about us/team/4-medium.jpg" alt=""></div>
+               <div class="col-md-4 mb-4 m-md-1 p-md-0"><img class="m-auto" src="../img/about us/team/5-medium.jpg" alt=""></div>
+               <div class="col-md-4 mb-4 m-md-1 p-md-0"><img class="m-auto" src="../img/about us/team/6-medium.jpg" alt=""></div>
+            </div>
+         </div>
+      </article>
+   </section>
+   <!-- End About Section -->
+   <section class="footer-section">
+      <div id="footer-top" style="background: #192038;">
+         <div class="container">
+            <div class="row pt-4 pb-3">
+               <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                  <div class="navbar-brand mb-4 p-0">
+                     <img src="../img/logo/logo1L.png" alt="" />
+                  </div>
+                  <ul class="p-0">
+                     <li><a class="pb-1 d-inline-block" href="about.html">Our Story?</a></li>
+                     <li><a class="pb-1 d-inline-block" href="attenstion.html">Store In Attention</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">Join Our Team</a></li>
+                     <li class="border-bottom border-bottom-2 pb-2"><a class="pb-1 d-inline-block" href="#">Authenticity</a></li>
+                     <li>
+                        <span class="text-white my-2 d-block">SHARE YOUR LOVE</span>
+                        <ul class="d-flex p-0" id="share">
+                           <li>
+                              <a class="me-2" href="#"><span class="icon-facebook-f"></span></a>
+                           </li>
+                           <li>
+                              <a class="me-2" href="#"><span class="icon-twitter"></span></a>
+                           </li>
+                           <li>
+                              <a class="me-2" href="#"><span class="icon-google-plus-g"></span></a>
+                           </li>
+                           <li>
+                              <a class="me-2" href="#"><span class="icon-instagram"></span></a>
+                           </li>
+                           <li>
+                              <a class="me-2" href="#"><span class="icon-pinterest-p"></span></a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md-6 mb-5 mb-lg-0 col-lg-2">
+                  <h4 class="mb-4 text-uppercase">top categories</h4>
+                  <ul class="p-0">
+                     <li><a class="pb-1 d-inline-block" href="#">makeup</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">skin</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">eye care</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">hair</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">personal care</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">natural</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">mom & baby</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-6 mb-5 mb-lg-0 col-lg-2">
+                  <h4 class="mb-4 text-uppercase">quick links</h4>
+                  <ul class="p-0">
+                     <li><a class="pb-1 d-inline-block" href="#">offers</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">mens products</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">skin concern</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">new arrival</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">makeup</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-6 mb-5 mb-lg-0 col-lg-2">
+                  <h4 class="mb-4 text-uppercase">all about beauty</h4>
+                  <ul class="p-0">
+                     <li><a class="pb-1 d-inline-block" href="#">know your routine</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">hair care 101</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">skin care 101</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">makeup 101</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <h4 class="mb-4 text-uppercase">help</h4>
+                  <ul class="p-0">
+                     <li><a class="pb-1 d-inline-block" href="contact.html">contact us</a></li>
+                     <li><a class="pb-1 d-inline-block" href="faqs.html">faqs</a></li>
+                     <li><a class="pb-1 d-inline-block" href="shipping.html">shipping & delivery</a></li>
+                     <li><a class="pb-1 d-inline-block" href="conditions.html">terms & conditions</a></li>
+                     <li><a class="pb-1 d-inline-block" href="refund.html">refund & return policy</a></li>
+                     <li><a class="pb-1 d-inline-block" href="#">trade license</a></li>
+                     <li class="border-bottom border-bottom-2 pb-2"><a class="pb-1 d-inline-block" href="privacy.html">privacy policy</a></li>
+                     <li class="mt-2">
+                        <a href="#" class="mb-2">payments accepted</a>
+                        <img src="../img/payment/payment-system.png" alt="" />
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="container py-3 border-top">
+            <div class="row">
+               <div class="col-12 py-3">
+                  <ul class="d-sm-flex justify-content-center m-0 p-0">
+                     <li class="ms-sm-3"><a class="mb-2 mb-sm-0 d-inline-block" href="#">AUTHENTICITY</a></li>
+                     <li class="ms-sm-3"><a class="mb-2 mb-sm-0 d-inline-block" href="#">TERMS & CONDITIONS</a></li>
+                     <li class="ms-sm-3"><a class="mb-2 mb-sm-0 d-inline-block" href="#">PRIVACY POLICY</a></li>
+                     <li class="ms-sm-3"><a class="mb-2 mb-sm-0 d-inline-block" href="#">REFUND & RETURN POLICY</a></li>
+                     <li class="ms-sm-3"><a class="mb-2 mb-sm-0 d-inline-block" href="#">FAQS</a></li>
+                  </ul>
+               </div>
+               <div class="col-12 text-center">Copyright © 2022. All Right Reserved Nion Roy</div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Footer Section -->
+
+
+
+   <!-- Script File -->
+   <script src="../js/jquery-3.6.0.min.js"></script>
+   <script src="../js/myscript.js"></script>
+</body>
+
+</html>
