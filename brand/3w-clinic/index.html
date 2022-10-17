@@ -4,14 +4,14 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-
-      <!-- Font Awesome -->
-      <script src="https://kit.fontawesome.com/96d390f02d.js" crossorigin="anonymous"></script>
+      <title>shajgoj.com</title>
 
       <!-- Bootstrap 5 CSS File -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Font Awesome File -->
+      <script src="https://kit.fontawesome.com/96d390f02d.js" crossorigin="anonymous"></script>
 
       <!-- Main CSS File -->
       <link rel="stylesheet" href="../../css/style.css" />
@@ -2407,10 +2407,10 @@
          <div class="chat-support-wrap">
             <span class="icon-chat-support" id="chatShow"></span>
             <div class="chat-support" id="chatSupport">
-               <div class="chat-form p-4">
-                  <span class="icon-angle-down" id="chatHide"></span>
+               <div class="chat-form">
+                  <i class="fa-solid fa-angle-down" id="chatHide"></i>
                   <div class="py-4">
-                     <img class="m-auto" src="../../img/logo/logo1.png" style="max-width: 50%" alt="" />
+                     <img class="m-auto" src="img/logo/logo1.png" style="max-width: 50%" alt="" />
                      <span class="d-block mt-2 text-center">Customer Support Desk</span>
                   </div>
                   <form action="/action_page.php">
@@ -2453,9 +2453,9 @@
                </div>
             </div>
             <div class="mini-cart text-center" id="hideCartMenu">
-               <div class="nav-title py-3 border-bottom border-2 d-flex align-items-center">
-                  <span class="icon-xmark ms-4 position-fixed" id="colesCartMenu"></span>
+               <div class="nav-title">
                   <h4 class="m-auto text-black text-uppercase">cart</h4>
+                  <i class="fa-solid fa-xmark" id="closeCartMenu"></i>
                </div>
                <div class="mini-cart-center text-center">
                   <span class="icon-use-shopbag"></span>
@@ -3793,8 +3793,8 @@
       <!-- End Footer Section -->
 
       <!-- Script File -->
+      <script src="../../js/scriptFile.js"></script>
       <script src="../../js/jquery-3.6.0.min.js"></script>
-      <script src="../../js/myscript.js"></script>
 
       <script>
          $(function () {

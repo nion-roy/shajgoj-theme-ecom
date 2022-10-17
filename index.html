@@ -823,7 +823,7 @@
                   </div>
                </div>
                <div class="d-flex align-items-center d-lg-none my-lg-3 my-3">
-                  <div class="d-lg-none" id="sideBarOpen" style="cursor: pointer">
+                  <div class="d-lg-none" id="sideOpen" style="cursor: pointer">
                      <img class="w-75" src="img/hamburger-black.svg" alt="" />
                   </div>
                   <div class="d-lg-none m-auto" style="max-width: 200px">
@@ -1265,6 +1265,15 @@
             </nav>
             <!-- Page Content -->
             <div class="menu_overlay" id="sidebarOverlay"></div>
+            <script>
+               document.getElementById("sideOpen").addEventListener("click", sidebarFunction);
+               document.getElementById("sidebarClose").addEventListener("click", sidebarFunction);
+               document.getElementById("sidebarOverlay").addEventListener("click", sidebarFunction);
+               function sidebarFunction() {
+                  document.getElementById("sidebarMenu").classList.toggle("open");
+                  document.getElementById("sidebarOverlay").classList.toggle("open");
+               }
+            </script>
             <!-- sidebar menu -->
             <nav class="d-lg-none position-fixed nav_hide" id="sidebarMenu">
                <div class="nav-title">
@@ -2086,7 +2095,7 @@
       <!-- End Footer Section -->
 
       <!-- Script File -->
-      <script src="js/script.js"></script>
+      <script src="js/scriptFile.js"></script>
       <script src="js/jquery-3.6.0.min.js"></script>
       <script src="nivo-slider/js/jquery-2.2.4.min.js"></script>
       <script src="nivo-slider/js/jquery.nivo.slider.js"></script>
