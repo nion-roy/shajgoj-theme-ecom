@@ -6,15 +6,6 @@ window.addEventListener("scroll", function () {
 
 // SideBar Click off-canvas Script ======================= >>
 
-
-// Side Bar Script ======================= >>
-// $(document).ready(function () {
-//    $(".sub-items span").on("click", function () {
-//       $(this).next().slideToggle(300);
-//       $(this).toggleClass("open");
-//    });
-// });
-
 // Chat Support Script ======================= >>
 document.getElementById("chatShow").addEventListener("click", chatFunction);
 document.getElementById("chatHide").addEventListener("click", chatFunction);
@@ -31,6 +22,37 @@ function cartFunction() {
    document.getElementById("hideCartMenu").classList.toggle("active");
    document.getElementById("cartOverlay").classList.toggle("active");
 }
+
+// Sidebar Script ======================= >>
+document.getElementById("sideBarOpen").addEventListener("click", sideFunction);
+document.getElementById("sidebarClose").addEventListener("click", sideFunction);
+document.getElementById("sidebarOverlay").addEventListener("click", sideFunction);
+function sideFunction() {
+   document.getElementById("sidebarMenu").classList.toggle("open");
+   document.getElementById("sidebarOverlay").classList.toggle("open");
+}
+// Side Bar Script ======================= >>
+$(document).ready(function () {
+   $(".sub_menu span").on("click", function () {
+      $(this).next().slideToggle(300);
+      $(this).toggleClass("active");
+   });
+});
+
+$(document).ready(function () {
+   $("#toggle").click(function () {
+      var elem = $("#toggle").text();
+      if (elem == "Read More") {
+         //Stuff to do when btn is in the read more state
+         $("#toggle").text("Read Less");
+         $("#text").slideDown();
+      } else {
+         //Stuff to do when btn is in the read less state
+         $("#toggle").text("Read More");
+         $("#text").slideUp();
+      }
+   });
+});
 
 // Form Script ======================= >>
 document.getElementById("regi_btn").onclick = () => {
@@ -50,39 +72,24 @@ document.getElementById("back_login").onclick = () => {
    document.getElementById("login_wrap").classList.toggle("active");
 };
 
-// // $(document).ready(function () {
-// //    $("#toggle").click(function () {
-// //       var elem = $("#toggle").text();
-// //       if (elem == "Read More") {
-// //          //Stuff to do when btn is in the read more state
-// //          $("#toggle").text("Read Less");
-// //          $("#text").slideDown();
-// //       } else {
-// //          //Stuff to do when btn is in the read less state
-// //          $("#toggle").text("Read More");
-// //          $("#text").slideUp();
-// //       }
-// //    });
-// // });
+const plus = document.querySelector(".inc-button"),
+   minus = document.querySelector(".dec-button"),
+   value = document.querySelector(".value");
 
-// // const plus = document.querySelector(".inc-button"),
-// //    minus = document.querySelector(".dec-button"),
-// //    value = document.querySelector(".value");
+let a = 1;
+let b = 10;
+plus.addEventListener("click", () => {
+   a++;
+   a = a < 10 ? "0" + a : b;
+   value.innerText = a;
+   console.log(a);
+});
 
-// // let a = 1;
-// // let b = 10;
-// // plus.addEventListener("click", () => {
-// //    a++;
-// //    a = a < 10 ? "0" + a : b;
-// //    value.innerText = a;
-// //    console.log(a);
-// // });
-
-// // minus.addEventListener("click", () => {
-// //    if (a > 1) {
-// //       a--;
-// //       a = a < 10 ? "0" + a : a;
-// //       value.innerText = a;
-// //       console.log(a);
-// //    }
-// // });
+minus.addEventListener("click", () => {
+   if (a > 1) {
+      a--;
+      a = a < 10 ? "0" + a : a;
+      value.innerText = a;
+      console.log(a);
+   }
+});

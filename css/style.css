@@ -652,7 +652,6 @@ input {
 
 .mini-cart.active {
    right: 0;
-   display: block !important;
    transition: var(--transition);
 }
 
