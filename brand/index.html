@@ -13,6 +13,8 @@
       <!-- Font Awesome -->
       <script src="https://kit.fontawesome.com/96d390f02d.js" crossorigin="anonymous"></script>
 
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
       <!-- Main CSS File -->
       <link rel="stylesheet" href="../css/style.css" />
    </head>
@@ -2530,24 +2532,16 @@
          <article>
             <div class="container">
                <div class="row">
-                  <div class="d-none d-lg-block col-md-3">
+                  <div class="d-none d-lg-block col-md-3 position-relative">
                      <div class="ais-header-title my-4">
                         <h5 class="border-bottom">Filter by price</h5>
                         <div class="ais-body ais-range-slider--body mt-3">
-                           <div class="ais-range-slider-base">
-                              <div class="ais-range-slider--origin">
-                                 <div class="ais-range-slider--tooltip">৳ 15.00</div>
-                              </div>
-                              <div class="ais-range-slider--origin">
-                                 <div class="ais-range-slider--tooltip">৳ 4,500.00</div>
-                              </div>
-                           </div>
-                           <div class="ais-range-slider mt-3">
-                              <div class="ais-range-slider-handle">
-                                 <div class="ais-range-slider--handle-lower"></div>
-                              </div>
-                              <div class="ais-range-slider-handle">
-                                 <div class="ais-range-slider--handle-upper"></div>
+                           <div class="ais-body ais-range-slider--body mt-3">
+                              <div class="price-range-slider">
+                                 <p class="range-value">
+                                    <input type="text" id="amount" readonly />
+                                 </p>
+                                 <div id="slider-range" class="range-bar"></div>
                               </div>
                            </div>
                         </div>
@@ -2891,12 +2885,12 @@
                               <button type="submit">
                                  <span class="icon-magnifying-glass"></span>
                               </button>
-                              <input type="search" class="ais-search-box--input" id="search" placeholder="Search Products, Categories..." />
+                              <input type="search" class="ais-search-box--input" placeholder="Search Products, Categories..." />
                            </div>
                         </form>
                      </div>
                      <!-- end search menu -->
-                     <div class="algolia-selectors mb-4 d-none d-md-block">
+                     <div class="algolia-selectors mb-4">
                         <div class="algolia-items">
                            <select name="algolia" class="py-2 border rounded d-block ms-auto" id="algolia-selectors">
                               <option value="wp_posts_product" selected>Default sorting</option>
@@ -2942,7 +2936,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2018/04/ponds-cold-cream-cleanser-600-570x570.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3000,7 +2994,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2018/05/Almond-oil-01-750x750.png" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3029,7 +3023,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2019/05/skin-cafe-Acne-Care-mask-1000-570x570.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/3w-clinic/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3058,7 +3052,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2018/07/Seasame-Seed-Oil-01.png" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3087,7 +3081,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/02/Dermalogika-Glass-Complexion-Brightening-and-Rejuvenating-Sheet-Mask-2-2.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/3w-clinic/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3116,7 +3110,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2021/08/NIVEA-Body-Lotion-Aloe-Hydration-small.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3145,7 +3139,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2021/09/LILAC-5-Niacinamide-Serum-05.png" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/3w-clinic/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3174,7 +3168,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2021/10/3W-Clinic-Essential-Up-Pearl-Sheet-Mask.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3203,7 +3197,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022 1/01/Lilac-Premium-Lip-Balm-Rose-with-SPF15-1-small.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/3w-clinic/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3232,7 +3226,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022 1/03/Panam-Care-Daily-Face-Wash-Beetroot-Extract-1-1-570x570.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3261,7 +3255,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2020/12/Lilac-Brightening-Moisturiser.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/3w-clinic/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3290,7 +3284,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2018/09/4921-flormar-lipstick-extreme-matte-14-chic-violet-01-small.png" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3319,7 +3313,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                            <div class="brand-items mb-3">
                               <div class="brand-menu-items d-flex d-md-block">
-                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2022/01/19574-Victorias-Secret-Tease-Rebel-Shimmer-Fragrance-MistÂ-250-570x570.jpg" alt="" /></a>
+                                 <a href="../brand/3w-clinic/index.html"><img src="../uploads/2020/12/Ponds-Light-Moisturizer-Non-oily-Fresh-Feel11.jpg" alt="" /></a>
                                  <div class="brand-footer-items text-md-center pt-3 px-2 p-md-0 m-auto ms-0 m-md-0">
                                     <a href="../brand/a-bena/index.html" class="d-block">3W Clinic Essential Up Pearl Sheet Mask</a>
                                     <span>SALE</span>
@@ -3458,6 +3452,7 @@
       <!-- Script File -->
       <script src="../js/jquery-3.6.0.min.js"></script>
       <script src="../js/scriptFile.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
       <script src="js/custom.js"></script>
 
       <script>
@@ -3482,6 +3477,22 @@
                   alert("Add to Cart");
                }, 3000);
             });
+         });
+      </script>
+      <script>
+         //-----JS for Price Range slider-----
+
+         $(function () {
+            $("#slider-range").slider({
+               range: true,
+               min: 130,
+               max: 7000,
+               values: [130, 7000],
+               slide: function (event, ui) {
+                  $("#amount").val(ui.values[0] + " ৳" + "  -  " + ui.values[1] + " ৳ ");
+               },
+            });
+            $("#amount").val($("#slider-range").slider("values", 0) + " ৳" + "  -  " + $("#slider-range").slider("values", 1) + " ৳ ");
          });
       </script>
    </body>

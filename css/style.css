@@ -859,6 +859,17 @@ input {
    .banner-section .container {
       width: 46rem;
    }
+
+   .algolia-selectors .algolia-items select {
+      width: 100%;
+   }
+}
+
+/* end algolia menu */
+@media only screen and (max-width: 768px) {
+   .algolia-selectors .algolia-items select {
+      width: 100%;
+   }
 }
 
 .brand-items {
@@ -1088,51 +1099,49 @@ input {
    display: block !important;
 }
 
-.ais-body {
-   position: relative;
-}
-
-.ais-range-slider {
-   position: relative;
+.price-range-slider {
    width: 100%;
-   height: 3px;
-   background: var(--lpink);
 }
 
-.ais-range-slider-base {
-   display: flex;
-   text-align: center;
-   justify-content: space-around;
-}
-
-.ais-range-slider-base .ais-range-slider--origin {
+.price-range-slider .range-value {
+   width: 100%;
+   padding: 3px 0;
    border: 1px solid var(--pink);
-   font-size: 14px;
-   padding: 2px 12px;
-   color: var(--pink);
+   margin: 0 auto;
 }
 
-.ais-range-slider-handle {
+.price-range-slider .range-value input {
+   background: none;
+   color: #000;
+   text-align: center;
+   font-size: 18px;
    width: 100%;
-   height: 100%;
+}
+
+.price-range-slider .range-bar {
+   border: none;
+   background: #eee;
+   height: 4px;
+   margin-top: 18px;
+}
+
+.price-range-slider .range-bar .ui-slider-range {
    background: var(--pink);
 }
 
-.ais-range-slider--handle-lower,
-.ais-range-slider--handle-upper {
-   width: 18px;
-   height: 18px;
-   top: -6px;
-   border-radius: 50%;
+.price-range-slider .range-bar .ui-slider-handle {
+   border: none;
+   border-radius: 25px;
    background: var(--pink);
-   position: absolute;
+   height: 17px;
+   width: 17px;
+   top: -0.48em;
    cursor: pointer;
 }
 
-.ais-range-slider--handle-upper {
-   right: 0;
+.price-range-slider .range-bar .ui-slider-handle+span {
+   background: var(--pink);
 }
-
 
 .algolia-search-box {
    position: relative;
